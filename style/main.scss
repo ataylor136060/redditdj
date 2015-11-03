@@ -1,0 +1,265 @@
+@import url('reset.css');
+
+$mainFont: 'Roboto', sans-serif;
+
+$primaryColor: #ffffff;
+$secondaryColor: #ff732f;
+
+h1{
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h4 {
+	font-size: 0.50em;
+}
+
+a {
+	color: $secondaryColor;
+}
+
+html {border-radius: 25px;}
+
+body {
+	width: 280px;
+	height: 360px;
+	font-size: 100%;
+	line-height: 0.98;
+	font-family: $mainFont;
+
+	.container {
+		display: block;
+		position:relative;
+		width: 99%;
+		height: 100%;
+		left: 1px;
+		background-color: $primaryColor;
+
+		header {
+			display: inline-block;
+			width: 100%;
+			height: 15%;
+			margin-top: 0.5px;
+			align-content: center;
+
+			.logo {
+				display: block;
+				position: relative;
+				width: 20%;
+				height: 100%;
+				float: left;
+			} 
+
+			.title {
+				display: block;
+				position: relative;
+				width: 70%;
+				margin-top:5px;
+				float: left;
+			}
+		}
+
+		main {
+			display: inline-block;
+			width: 100%;
+			height: 77%;
+			background-color: $primaryColor;
+
+			.currentSongWindow {
+				display: inline-block;
+				width: 100%;
+				height: 75%;
+				background: blue;
+
+				.currentSongThumbWin {
+					display:block;
+					position:relative;
+					width: 75%;
+					height: 75%;
+					top: 5.5%;
+					left: 16%;
+					//background-color: black;
+					text-align: center;
+
+					.currentSongThumb {
+						width:90%;
+						height: 90%; 
+
+						img {
+							width:100%;
+							height:100%;
+						}
+					}
+				}
+				.currentSongInfo {
+					display: block;
+					position: relative;
+					width:100%;
+					height: 26%;
+					top: 2%;
+					background-color: rgba(0,0,0,0.6);
+					overflow-x: hidden;
+					overflow-y: hidden;
+					white-space: nowrap;
+
+					.song, .artist {
+						position: relative;
+						top: 4px;
+						left: 4px;
+						line-height: 1.05;
+						margin-left: 5px;
+						color: #ffffff;
+					    overflow-x: hidden;
+					    overflow-y: hidden;
+					}
+				}
+			}
+
+			.controlBar {
+				display: inline-block;
+				width: 100%;
+				height:28%;
+				background-color: $primaryColor;
+
+				.prevButton {
+					position: relative;
+					width:25%;
+					height: 60%;
+					float: left;
+
+					background-color: $primaryColor;
+
+					.prevButtonImg {
+						position: relative;
+						width: 50%;
+						height: 100%;
+						margin: 0 auto;
+						margin-top: 20px;
+						float: right;
+
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+				.playButton {
+					position: relative;
+					width:50%;
+					height: 100%;
+					float: left;
+					text-align: center;
+					background-color: $primaryColor;
+
+					.playButtonImg {
+						position: relative;
+						width: 40%;
+						height: 70%;
+						margin: 0 auto;
+						margin-top: 17px;
+						text-align: center;
+
+						img {
+							margin: 0 auto;
+							width: 100%;
+							height: 100%;
+						}
+					}
+
+				}
+				.nextButton {
+					position: relative;
+					width:25%;
+					height: 60%;
+					float: left;
+					text-align: center;
+					background-color: $primaryColor;
+
+					.nextButtonImg {
+						position: relative;
+						width: 50%;
+						height: 100%;
+						margin: 0 auto;
+						margin-top: 20px;
+						float: left;
+
+						img {
+							margin: 0 auto;
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		footer {
+			display: inline-block;
+			width: 100%;
+			height: 10%;
+			margin-top: 15px;
+			border-top: 1px solid black;
+			background-color: $primaryColor;
+
+			.github{
+				display: inline-block;
+				position: relative;
+				width:50%;
+				height: 100%;
+				margin: 0 auto;
+				margin-top: 4px;
+				float: left;
+
+				.githubLink {
+					position: relative;
+					width: 100%;
+					height: 100%;
+
+					img, h6 {
+						position: relative;
+						margin:0 auto;
+						text-decoration: none;
+						float: left;
+					}
+
+					h6 {
+						margin-top:10px;
+						margin-left: 2px;
+						color: black;
+					}
+				}
+			}
+
+			.settings{
+				display: inline-block;
+				position: relative;
+				width:50%;
+				height: 100%;
+				margin: 0 auto;
+				margin-top: 4px;
+				float: left;
+
+				.settingsLink {
+					position: relative;
+					width: 100%;
+					height: 100%;
+
+					h6 {
+						position: relative;
+						float: right;
+						margin-top: 10px;
+						margin-right: 2px;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

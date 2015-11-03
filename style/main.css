@@ -1,0 +1,196 @@
+@import url("reset.css");
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1em; }
+
+h4 {
+  font-size: 0.50em; }
+
+a {
+  color: #ff732f; }
+
+html {
+  border-radius: 25px; }
+
+body {
+  width: 280px;
+  height: 360px;
+  font-size: 100%;
+  line-height: 0.98;
+  font-family: "Roboto", sans-serif; }
+  body .container {
+    display: block;
+    position: relative;
+    width: 99%;
+    height: 100%;
+    left: 1px;
+    background-color: #ffffff; }
+    body .container header {
+      display: inline-block;
+      width: 100%;
+      height: 15%;
+      margin-top: 0.5px;
+      align-content: center; }
+      body .container header .logo {
+        display: block;
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left; }
+      body .container header .title {
+        display: block;
+        position: relative;
+        width: 70%;
+        margin-top: 5px;
+        float: left; }
+    body .container main {
+      display: inline-block;
+      width: 100%;
+      height: 77%;
+      background-color: #ffffff; }
+      body .container main .currentSongWindow {
+        display: inline-block;
+        width: 100%;
+        height: 75%;
+        background: blue; }
+        body .container main .currentSongWindow .currentSongThumbWin {
+          display: block;
+          position: relative;
+          width: 75%;
+          height: 75%;
+          top: 5.5%;
+          left: 16%;
+          text-align: center; }
+          body .container main .currentSongWindow .currentSongThumbWin .currentSongThumb {
+            width: 90%;
+            height: 90%; }
+            body .container main .currentSongWindow .currentSongThumbWin .currentSongThumb img {
+              width: 100%;
+              height: 100%; }
+        body .container main .currentSongWindow .currentSongInfo {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 26%;
+          top: 2%;
+          background-color: rgba(0, 0, 0, 0.6);
+          overflow-x: hidden;
+          overflow-y: hidden;
+          white-space: nowrap; }
+          body .container main .currentSongWindow .currentSongInfo .song, body .container main .currentSongWindow .currentSongInfo .artist {
+            position: relative;
+            top: 4px;
+            left: 4px;
+            line-height: 1.05;
+            margin-left: 5px;
+            color: #ffffff;
+            overflow-x: hidden;
+            overflow-y: hidden; }
+      body .container main .controlBar {
+        display: inline-block;
+        width: 100%;
+        height: 28%;
+        background-color: #ffffff; }
+        body .container main .controlBar .prevButton {
+          position: relative;
+          width: 25%;
+          height: 60%;
+          float: left;
+          background-color: #ffffff; }
+          body .container main .controlBar .prevButton .prevButtonImg {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+            float: right; }
+            body .container main .controlBar .prevButton .prevButtonImg img {
+              width: 100%;
+              height: 100%; }
+        body .container main .controlBar .playButton {
+          position: relative;
+          width: 50%;
+          height: 100%;
+          float: left;
+          text-align: center;
+          background-color: #ffffff; }
+          body .container main .controlBar .playButton .playButtonImg {
+            position: relative;
+            width: 40%;
+            height: 70%;
+            margin: 0 auto;
+            margin-top: 17px;
+            text-align: center; }
+            body .container main .controlBar .playButton .playButtonImg img {
+              margin: 0 auto;
+              width: 100%;
+              height: 100%; }
+        body .container main .controlBar .nextButton {
+          position: relative;
+          width: 25%;
+          height: 60%;
+          float: left;
+          text-align: center;
+          background-color: #ffffff; }
+          body .container main .controlBar .nextButton .nextButtonImg {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+            float: left; }
+            body .container main .controlBar .nextButton .nextButtonImg img {
+              margin: 0 auto;
+              width: 100%;
+              height: 100%; }
+    body .container footer {
+      display: inline-block;
+      width: 100%;
+      height: 10%;
+      margin-top: 15px;
+      border-top: 1px solid black;
+      background-color: #ffffff; }
+      body .container footer .github {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 4px;
+        float: left; }
+        body .container footer .github .githubLink {
+          position: relative;
+          width: 100%;
+          height: 100%; }
+          body .container footer .github .githubLink img, body .container footer .github .githubLink h6 {
+            position: relative;
+            margin: 0 auto;
+            text-decoration: none;
+            float: left; }
+          body .container footer .github .githubLink h6 {
+            margin-top: 10px;
+            margin-left: 2px;
+            color: black; }
+      body .container footer .settings {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 4px;
+        float: left; }
+        body .container footer .settings .settingsLink {
+          position: relative;
+          width: 100%;
+          height: 100%; }
+          body .container footer .settings .settingsLink h6 {
+            position: relative;
+            float: right;
+            margin-top: 10px;
+            margin-right: 2px;
+            text-decoration: none; }

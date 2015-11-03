@@ -1,0 +1,11 @@
+<script>
+	var test = function(e){
+	alert("this is working");
+}
+
+chrome.contextMenus.create({
+	title: "Add to Playlist",
+	contexts: ["image", "link", "selection"],
+	onclick: test
+});
+</script>
